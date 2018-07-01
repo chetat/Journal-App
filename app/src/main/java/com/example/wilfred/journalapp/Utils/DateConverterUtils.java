@@ -10,19 +10,14 @@ import java.util.Date;
 
 public class DateConverterUtils {
     @TypeConverter
-    public static Date toDate(Long timestamp){
-        if (timestamp == null){
-            return null;
-        }else {
-            return new Date(timestamp);
-        }
+    public static Date toDate(Long timestamp) {
+        return timestamp == null ? null : new Date(timestamp);
     }
+
     @TypeConverter
-    public static Long toTimeStamp(Date date){
-        if (date == null){
-            return null;
-        }else {
-            return date.getTime();
-        }
+    public static Long toTimestamp(Date date) {
+        return date == null ? null : date.getTime();
     }
+
+
 }

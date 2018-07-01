@@ -1,5 +1,6 @@
 package com.example.wilfred.journalapp.database;
 
+import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
@@ -16,29 +17,25 @@ public class JournalEntry {
     private int id;
     private String entryTitle;
     private String entryText;
-    private Date entryDate;
+
+    @ColumnInfo(name = "updated_at")
+    private Date updatedAt;
+
 
     @Ignore
     public JournalEntry(String entryTitle, String entryText, Date entryDate){
         this.entryTitle = entryTitle;
         this.entryText = entryText;
-        this.entryDate = entryDate;
+        this.updatedAt = entryDate;
     }
 
-    public JournalEntry(int id, String entryTitle, String entryText, Date entryDate){
+    public JournalEntry(int id, String entryTitle, String entryText, Date updatedAt){
         this.id = id;
         this.entryTitle = entryTitle;
         this.entryText = entryText;
-        this.entryDate = entryDate;
+        this.updatedAt = updatedAt;
     }
 
-    public Date getEntryDate() {
-        return entryDate;
-    }
-
-    public void setEntryDate(Date entryDate) {
-        this.entryDate = entryDate;
-    }
 
     public String getEntryText() {
         return entryText;
@@ -58,5 +55,17 @@ public class JournalEntry {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
     }
 }

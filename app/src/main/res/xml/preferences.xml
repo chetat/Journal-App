@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="display_preference"
+        android:title="Set Display Type"
+        android:entries="@array/layout_type" />
+</PreferenceScreen>

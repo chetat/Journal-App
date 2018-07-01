@@ -1,9 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?><!--
+    This vertical linear layout contains all the views in the AddTaskActivity code.
+    This includes an EditText to adtaskEntrytask description, and buttons to select a priority
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.wilfred.journalapp.AddEntry">
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <!-- EditText for getEntrytask description input -->
+    <EditText
+        android:id="@+id/title_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="start"
+        android:hint="@string/title_textField" />
+
+    <EditText
+        android:id="@+id/textEntry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="start"
+        android:hint="@string/text_entry"
+        android:selectAllOnFocus="true"
+        android:inputType="textShortMessage|textMultiLine|textCapSentences"
+        android:singleLine="false" />
+
+    <!-- Add button -->
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/save_btn_text"
+        android:textColor="@android:color/primary_text_dark"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="0dp" />
+
+</LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.wilfred.journalapp.database;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
@@ -16,8 +17,8 @@ import java.util.List;
 public interface EntryDao {
 
 
-    @Query("SELECT * FROM Journal ORDER BY entryDate")
-    List<JournalEntry> getAllEntries();
+    @Query("SELECT * FROM Journal")
+    LiveData<List<JournalEntry>> getAllEntries();
 
     @Insert
     void insertEntry(JournalEntry journalEntry);
