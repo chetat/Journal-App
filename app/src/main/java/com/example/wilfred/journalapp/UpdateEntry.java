@@ -3,6 +3,7 @@ package com.example.wilfred.journalapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,5 +18,6 @@ public class UpdateEntry extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_entry);
         mItemTextView = findViewById(R.id.entry_text_view);
+
     }
 }

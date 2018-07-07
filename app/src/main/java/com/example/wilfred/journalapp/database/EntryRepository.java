@@ -19,7 +19,7 @@ public class EntryRepository {
         mEntryDao = database.entryDao();
         mEntries = mEntryDao.getAllEntries();
     }
-
+//AsyncTask to retrieve all entries
     LiveData<List<JournalEntry>> getEntries(){
         return mEntries;
     }
@@ -27,6 +27,7 @@ public class EntryRepository {
         new insertAsyncTask(mEntryDao).execute(entry);
     }
 
+    //AsyncTask to delete an entry
     public void delete(JournalEntry entry){
         new deleteAsyncTask(mEntryDao).execute(entry);
     }

@@ -42,11 +42,10 @@ public abstract class JournalDatabase  extends RoomDatabase{
                 @Override
                 public void onOpen (@NonNull SupportSQLiteDatabase db){
                     super.onOpen(db);
-                    new PopulateDbAsync(sInstance).execute();
                 }
             };
 
-    // AsyncTask that deletes the contents of the database, then populates it with the one entry
+    /*AsyncTask that deletes the contents of the database, then populates it with the one entry
     private static class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
 
         private final EntryDao mDao;
@@ -57,12 +56,9 @@ public abstract class JournalDatabase  extends RoomDatabase{
 
         @Override
         protected Void doInBackground(final Void... params) {
-            Date date = new Date();
-            JournalEntry entry = new JournalEntry("Hello", "This is just a text for demo purpose", date);
-            mDao.insertEntry(entry);
             return null;
         }
     }
-
+*/
 public abstract EntryDao entryDao();
 }
