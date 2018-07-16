@@ -3,13 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/setings"
+        android:id="@+id/action_settings"
         android:title="@string/settings"
         app:showAsAction="never">
 
     </item>
     <item android:id="@+id/signOut"
         android:title="@string/sign_out"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
         app:showAsAction="never">
 
     </item>

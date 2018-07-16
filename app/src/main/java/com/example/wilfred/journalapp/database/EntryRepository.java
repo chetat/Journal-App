@@ -20,7 +20,7 @@ public class EntryRepository {
         mEntries = mEntryDao.getAllEntries();
     }
 //AsyncTask to retrieve all entries
-    LiveData<List<JournalEntry>> getEntries(){
+    public LiveData<List<JournalEntry>> getEntries(){
         return mEntries;
     }
     public void insert(JournalEntry entry){

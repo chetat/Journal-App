@@ -2,6 +2,8 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <ListPreference
         android:key="display_preference"
-        android:title="Set Display Type"
-        android:entries="@array/layout_type" />
+        android:title="Display"
+        android:entries="@array/layout_type"
+        android:entryValues="@array/layout_type_values"
+        android:defaultValue="@string/default_display_value"/>
 </PreferenceScreen>
