@@ -232,6 +232,10 @@
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-alpha3.aar\\f1e173849773890250300d48574ccce1\\res\\drawable\\notification_tile_bg.xml"
     },
     {
+        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_main_fragment.xml.flat",
+        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout\\activity_main_fragment.xml"
+    },
+    {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout_fui_phone_progress_dialog.xml.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.0.0.aar\\dedc08a110403f38bbeb020ab53bccd9\\res\\layout\\fui_phone_progress_dialog.xml"
     },
@@ -968,10 +972,6 @@
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout_fragment_entry_detail_layout.xml.flat",
-        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout\\fragment_entry_detail_layout.xml"
-    },
-    {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
@@ -1492,6 +1492,10 @@
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout-land_activity_settings.xml.flat",
+        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout-land\\activity_settings.xml"
+    },
+    {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
@@ -1510,6 +1514,10 @@
     {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout-land_activity_add_entry.xml.flat",
+        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout-land\\activity_add_entry.xml"
     },
     {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1668,6 +1676,10 @@
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-alpha3.aar\\cf30c79e2fff163efa7a2516052f26ae\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout-land_activity_main_fragment.xml.flat",
+        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout-land\\activity_main_fragment.xml"
+    },
+    {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-v21_abc_list_divider_material.xml.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\drawable-v21\\abc_list_divider_material.xml"
     },
@@ -1744,8 +1756,8 @@
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-alpha3.aar\\cf30c79e2fff163efa7a2516052f26ae\\res\\animator\\mtrl_chip_state_list_anim.xml"
     },
     {
-        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout_fragment_main_activity_layout.xml.flat",
-        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout\\fragment_main_activity_layout.xml"
+        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout-land_activity_entry_detail.xml.flat",
+        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout-land\\activity_entry_detail.xml"
     },
     {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1890,10 +1902,6 @@
     {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
-        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_update_entry.xml.flat",
-        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout\\activity_update_entry.xml"
     },
     {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -2558,5 +2566,9 @@
     {
         "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout-v21_preference_dropdown_material.xml.flat",
         "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-27.1.1.aar\\f866e6febeb5268e460327cfac38929b\\res\\layout-v21\\preference_dropdown_material.xml"
+    },
+    {
+        "merged": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\res\\merged\\release\\layout-land_activity_main.xml.flat",
+        "source": "D:\\androidProjects\\Journal-App\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     }
 ]

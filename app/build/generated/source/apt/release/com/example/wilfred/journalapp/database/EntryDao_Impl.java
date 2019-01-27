@@ -137,7 +137,7 @@ public class EntryDao_Impl implements EntryDao {
 
   @Override
   public LiveData<List<JournalEntry>> getAllEntries() {
-    final String _sql = "SELECT * FROM Journal";
+    final String _sql = "SELECT * FROM journal";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return new ComputableLiveData<List<JournalEntry>>() {
       private Observer _observer;
@@ -145,7 +145,7 @@ public class EntryDao_Impl implements EntryDao {
       @Override
       protected List<JournalEntry> compute() {
         if (_observer == null) {
-          _observer = new Observer("Journal") {
+          _observer = new Observer("journal") {
             @Override
             public void onInvalidated(@NonNull Set<String> tables) {
               invalidate();
@@ -178,6 +178,65 @@ public class EntryDao_Impl implements EntryDao {
             _tmpUpdatedAt = DateConverterUtils.toDate(_tmp);
             _item = new JournalEntry(_tmpId,_tmpEntryTitle,_tmpEntryText,_tmpUpdatedAt);
             _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<JournalEntry> getEntryById(int entryId) {
+    final String _sql = "SELECT * FROM journal WHERE id = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, entryId);
+    return new ComputableLiveData<JournalEntry>() {
+      private Observer _observer;
+
+      @Override
+      protected JournalEntry compute() {
+        if (_observer == null) {
+          _observer = new Observer("journal") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfEntryTitle = _cursor.getColumnIndexOrThrow("entryTitle");
+          final int _cursorIndexOfEntryText = _cursor.getColumnIndexOrThrow("entryText");
+          final int _cursorIndexOfUpdatedAt = _cursor.getColumnIndexOrThrow("updated_at");
+          final JournalEntry _result;
+          if(_cursor.moveToFirst()) {
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpEntryTitle;
+            _tmpEntryTitle = _cursor.getString(_cursorIndexOfEntryTitle);
+            final String _tmpEntryText;
+            _tmpEntryText = _cursor.getString(_cursorIndexOfEntryText);
+            final Date _tmpUpdatedAt;
+            final Long _tmp;
+            if (_cursor.isNull(_cursorIndexOfUpdatedAt)) {
+              _tmp = null;
+            } else {
+              _tmp = _cursor.getLong(_cursorIndexOfUpdatedAt);
+            }
+            _tmpUpdatedAt = DateConverterUtils.toDate(_tmp);
+            _result = new JournalEntry(_tmpId,_tmpEntryTitle,_tmpEntryText,_tmpUpdatedAt);
+          } else {
+            _result = null;
           }
           return _result;
         } finally {

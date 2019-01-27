@@ -38,9 +38,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.wilfred.journalapp.AddEntry" />
-        <activity android:name="com.example.wilfred.journalapp.UpdateEntry" />
         <activity
-            android:name="com.example.wilfred.journalapp.SettingsActivity"
+            android:name="com.example.wilfred.journalapp.settings.SettingsActivity"
             android:label="Settings"
             android:parentActivityName="com.example.wilfred.journalapp.MainActivity" >
             <meta-data

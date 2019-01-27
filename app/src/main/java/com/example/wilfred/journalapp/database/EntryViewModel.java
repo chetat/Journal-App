@@ -25,6 +25,7 @@ public class EntryViewModel extends AndroidViewModel {
     public void insert(JournalEntry entry){
         mRepository.insert(entry);
     }
+
     public LiveData<List<JournalEntry>> getAllEntries() {
         if (mAllEntries == null){
            mAllEntries =  mRepository.getEntries();
@@ -35,5 +36,12 @@ public class EntryViewModel extends AndroidViewModel {
         mRepository.delete(entry);
     }
 
+    public LiveData<JournalEntry> getEntryById(int id){
+        return mRepository.getEntryById(id);
+    }
 
+
+    public void update(JournalEntry entry) {
+        mRepository.updateJournal(entry);
+    }
 }

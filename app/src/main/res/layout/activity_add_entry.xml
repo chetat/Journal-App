@@ -2,46 +2,78 @@
     This vertical linear layout contains all the views in the AddTaskActivity code.
     This includes an EditText to adtaskEntrytask description, and buttons to select a priority
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <!-- EditText for getEntrytask description input -->
     <EditText
         android:id="@+id/title_field"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:gravity="start"
-        android:hint="@string/title_textField" />
+        android:hint="@string/title_field_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textEntry_field"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:gravity="start"
-        android:hint="@string/text_entry"
-        android:selectAllOnFocus="true"
+        android:hint="@string/text_entry_hint"
         android:inputType="textShortMessage|textMultiLine|textCapSentences"
-        android:singleLine="false" />
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_field" />
 
     <!-- Add button -->
     <Button
         android:id="@+id/saveButton"
         style="@style/TextAppearance.AppCompat.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="64dp"
-        android:layout_marginRight="0dp"
+        android:layout_width="313dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
         android:background="@color/colorPrimary"
         android:text="@string/save_btn_text"
         android:textColor="@android:color/primary_text_dark"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="0dp" />
+        app:layout_constraintEnd_toEndOf="@+id/journal_textview"
+        app:layout_constraintStart_toStartOf="@+id/journal_textview"
+        app:layout_constraintTop_toBottomOf="@+id/textEntry_field" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/journal_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/journal_textview_text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/title_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

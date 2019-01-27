@@ -17,8 +17,11 @@ import java.util.List;
 public interface EntryDao {
 
 
-    @Query("SELECT * FROM Journal")
+    @Query("SELECT * FROM journal")
     LiveData<List<JournalEntry>> getAllEntries();
+
+    @Query("SELECT * FROM journal WHERE id = :entryId")
+    LiveData<JournalEntry> getEntryById(int entryId);
 
     @Insert
     void insertEntry(JournalEntry journalEntry);
