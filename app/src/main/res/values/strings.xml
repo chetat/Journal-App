@@ -15,4 +15,6 @@
     <string name="about">About Developer</string>
     <string name="journal_textview_text">Create New Journal</string>
     <string name="update_journal_textview">Update Journal Entry</string>
+    <string name="create_new_journal">Create New Journal</string>
+    <string name="some_entry_text_to_display">Some entry Text to display</string>
 </resources>

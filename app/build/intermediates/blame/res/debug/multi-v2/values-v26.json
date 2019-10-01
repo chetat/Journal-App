@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "/home/ngenge/AndroidStudioProjects/Journal-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.0.0.aar\\dedc08a110403f38bbeb020ab53bccd9\\res\\values-v26\\values-v26.xml",
-                    "from": {
-                        "startLines": "2,6,10,14",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,253,438,631",
-                        "endLines": "5,9,13,21",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "248,433,626,1035"
-                    },
-                    "to": {
-                        "startLines": "17,21,25,29",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "989,1187,1372,1565",
-                        "endLines": "20,24,28,36",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "1182,1367,1560,1969"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\055695d8830dc6a4617ba282e7b8f199\\res\\values-v26\\values-v26.xml",
+                    "source": "/home/ngenge/.gradle/caches/transforms-2/files-2.1/c814825deaf7faac4c30a1ecc6120e66/appcompat-1.1.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -31,6 +12,25 @@
                         "endLines": "2,3,7,11,15,16",
                         "endColumns": "74,86,12,12,12,92",
                         "endOffsets": "125,212,426,652,891,984"
+                    }
+                },
+                {
+                    "source": "/home/ngenge/.gradle/caches/transforms-2/files-2.1/40661ac76acafab8704ee41bfa2e3e43/jetified-firebase-ui-auth-5.0.0/res/values-v26/values-v26.xml",
+                    "from": {
+                        "startLines": "2,6,10,14",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,253,438,631",
+                        "endLines": "5,9,13,17",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "248,433,626,806"
+                    },
+                    "to": {
+                        "startLines": "17,21,25,29",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "989,1187,1372,1565",
+                        "endLines": "20,24,28,32",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "1182,1367,1560,1740"
                     }
                 }
             ]

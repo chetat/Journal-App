@@ -1,16 +1,33 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\androidProjects\\Journal-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+            "outputFile": "/home/ngenge/AndroidStudioProjects/Journal-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\YekuWilfred\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-4.0.0.aar\\dedc08a110403f38bbeb020ab53bccd9\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "/home/ngenge/.gradle/caches/transforms-2/files-2.1/b00af28636140cf8396853a4f3c02d46/preference-1.1.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                },
+                {
+                    "source": "/home/ngenge/.gradle/caches/transforms-2/files-2.1/40661ac76acafab8704ee41bfa2e3e43/jetified-firebase-ui-auth-5.0.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
                         "startOffsets": "55,125,186,247,302,356,414",
                         "endColumns": "69,60,60,54,53,57,56",
                         "endOffsets": "120,181,242,297,351,409,466"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "127,197,258,319,374,428,486",
+                        "endColumns": "69,60,60,54,53,57,56",
+                        "endOffsets": "192,253,314,369,423,481,538"
                     }
                 }
             ]
